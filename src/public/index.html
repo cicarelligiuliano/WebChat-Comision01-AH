@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/index.css" type="text/css" />
+        <title>WebChat</title>
+    </head>
+    <body></body>
+    <div id="loginDiv" class="container">
+        <h1>Welcome to Backend Webchat</h1>
+
+        <form id="login" class="form">
+            <input type="text" class="input" id="loginInput" placeholder="Escriba su nombre de usuario" />
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <h4 id="loginMessage"></h4>
+    </div>
+    <div id="chat" class="container" hidden>
+        <div id="messages" class="messages"></div>
+
+        <form id="chatForm" class="form">
+            <input type="text" class="input" id="inputMessage" autocomplete="off" placeholder="Escribe un mensaje" />
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="./js/index.js"></script>
+</html>
